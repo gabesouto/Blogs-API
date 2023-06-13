@@ -12,7 +12,9 @@ const token = jwt.sign({ data: { userId: param } }, secret, jwtConfig);
 
 return token;
 };
+const verifyToken = (token) => jwt.verify(token, secret);
 
 module.exports = {
   generateToken,
+  verifyToken,
 };

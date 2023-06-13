@@ -12,7 +12,6 @@ const sign = async (payload) => {
   if (user.password !== password) {
     return { type: 400, message: 'Invalid fields' };
   }
-
   return { type: null, message: generateToken(user.id) };
 };
 
