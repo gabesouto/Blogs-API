@@ -12,7 +12,13 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes,
       allowNull: false,
     },
-  })
+  },
+  {
+    timestamps: false,
+    tableName: 'categories',
+    underscored: true,
+
+  },)
   return Category
 }
   
