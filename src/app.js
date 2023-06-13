@@ -1,5 +1,7 @@
 const express = require('express');
 
+const { userRouter } = require('./routes');
+
 // ...
 
 const app = express();
@@ -10,6 +12,8 @@ app.get('/', (_request, response) => {
 });
 
 app.use(express.json());
+
+app.use('/', userRouter);
 
 // ...
 
