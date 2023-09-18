@@ -12,7 +12,16 @@ const postBlog = async (req, res) => {
   res.status(201).json(response.message);
 };
 
+const getBlogById = async (req, res) => {
+  const { id } = req.params;
+  const response = await blogsService.getBlogById(id);
+  if (response.type)
+    return res.status(response.type).json({ message: response.message });
+  res.status(200).json(response.message);
+};
+
 module.exports = {
   getAll,
   postBlog,
+  getBlogById,
 };
