@@ -1,6 +1,12 @@
 const express = require('express');
 
-const { loginRouter, userRouter, categoriesRouter, blogsRouter } = require('./routes');
+const {
+  loginRouter,
+  userRouter,
+  categoriesRouter,
+  blogsRouter,
+  postRouter,
+} = require('./routes');
 
 // ...
 
@@ -17,6 +23,7 @@ app.use('/', loginRouter);
 app.use('/', userRouter);
 app.use('/', categoriesRouter);
 app.use('/', blogsRouter);
+app.use('/', postRouter);
 // ...
 
 // É importante exportar a constante `app`,

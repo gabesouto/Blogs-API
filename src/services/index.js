@@ -1,4 +1,4 @@
-const loginService = require('./Login.service');
+const loginService = require('./login.service');
 const userService = require('./user.service');
 const categoriesService = require('./categories.service');
 const blogsService = require('./blogs.service');
@@ -6,7 +6,6 @@ const blogsService = require('./blogs.service');
 module.exports = {
   loginService,
   userService,
-
   blogsService,
   categoriesService,
 };
