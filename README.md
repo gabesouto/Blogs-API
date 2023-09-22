@@ -1,6 +1,6 @@
 # Blog API - Documentação
 
-Neste projeto, desenvolvi uma API e um banco de dados para a produção de conteúdo de um blog. Utilizei Node.js, Express.js, MySQL, autenticação JWT e Docker para facilitar o ambiente de desenvolvimento. O projeto foi concluído antes da data de entrega em 23/06/2023.
+Neste projeto, desenvolvi uma API e um banco de dados para a produção de conteúdo de um blog. Utilizei Node.js, Express.js, MySQL, autenticação JWT e Docker para facilitar o ambiente de desenvolvimento. 
 
 ## Funcionalidades
 
